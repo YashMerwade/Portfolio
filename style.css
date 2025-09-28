@@ -689,3 +689,148 @@ hr {
   background: #0d0d0d;
   z-index: -1;
 }
+/* ===== Responsive Fixes for Mobile ===== */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav .logo {
+    margin-left: 0;
+    font-size: 1.8rem;
+  }
+
+  nav .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  nav .talk-btn {
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+
+  /* Skills Grid → 2 columns */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* Education & Experience → stack vertically */
+  .edu-exp .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .year {
+    margin-left: 10;
+    float: none;
+    text-align: right;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smaller phones */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+}
+/* ===== Mobile Footer & Text Adjustments ===== */
+@media (max-width: 768px) {
+
+  /* Footer: center text */
+  #footer, .footer-left, .footer-right {
+    text-align: center !important;
+  }
+
+  .footer-left h2,
+  .footer-left p,
+  .footer-right nav {
+    margin: 0 auto;
+  }
+
+  /* Experience / Internship headings smaller */
+  .education h2, .experience h2 {
+    font-size: 1.5rem;  /* shrink for mobile */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .edu-item h3, .exp-item h3 {
+    font-size: 1.2rem;  /* smaller subheadings */
+  }
+
+  .year {
+    font-size: 1rem;
+    margin-left: 20;
+    float: none;
+    text-align: right;
+  }
+}
